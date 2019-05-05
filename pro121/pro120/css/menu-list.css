@@ -1,0 +1,334 @@
+/*Font Family*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800");
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    
+    font-weight: 700;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+
+}
+
+.content {
+    text-align: center;
+}
+
+/* modal */
+#background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.747);
+    z-index: 15;
+}
+
+#reserve {
+    display: none;
+    position: fixed;
+    left: 15%;
+    top: 17%;
+    width: 70%;
+    height: 80%;
+    background: #fff;
+    z-index: 20;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+#reserve * {
+    margin: 0;
+}
+
+#reserve img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#reserve > div {
+    width: 100%;
+    height: 100%;
+    border: 0cm;
+}
+
+#reserve > div > div {
+    display: inline-block;
+}
+
+#reserve .top {
+    width: 70%;
+    height: 100%;
+}
+
+#reserve .carousel-inner {
+    height: 100%;
+}
+
+#reserve .carousel-inner * {
+    height: 100%;
+}
+
+#reserve .bottom {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+}
+
+#reserve .bottom > .room_tag {
+    text-align: center;
+}
+
+#reserve .bottom .wrapper_btn_reserve {
+    width: 100%;
+    position: absolute;
+    bottom: 25px;
+}
+
+#reserve .bottom .btn_reserve,
+#reserve .bottom .favorite_btn {
+    text-align: center;
+    margin: 5px auto;
+}
+
+/* modal 끝 */
+
+
+/* 건물 버튼 */
+#section_about {
+    padding-top: 30px;
+}
+
+#btn_all_buildings {
+    text-align: center;
+}
+
+.btns_building {
+    display: inline-block;
+
+    height: 55px;
+
+    border: 0.5px solid gainsboro;
+    border-radius: 5px;
+    margin-right: 30px;
+    padding-right: 10px;
+
+    overflow: hidden;
+}
+
+.btns_building:hover {
+    display: inline-block;
+
+    height: 55px;
+    border-radius: 5px;
+    margin-right: 30px;
+    padding-right: 10px;
+
+    overflow: hidden;
+    border: 2.5px solid #000080;
+    ;
+}
+
+.btns_building img {
+    width: 60px;
+    height: 55px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btns_building * {
+    display: inline-block;
+}
+
+.btn_pink {
+    background: #312b2f;
+    color: rgb(192, 192, 192);
+}
+
+#btn_datepick {
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: grey;
+    vertical-align: middle;
+    /*font-size: 150%;*/
+}
+
+#loadmore {
+    margin-top: 30px;
+    color: white;
+}
+
+#filter_wrapper {
+    width: 100%;
+    height: 10%;
+    align-content: center;
+}
+
+#testDatepicker {
+    text-align: center;
+    border-radius: 10px;
+}
+
+#btns_building_wrapper {
+    height: 100px;
+    width: 100%;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* white-space: nowrap; 이거때문인데 뭔상관인지모르겠음 */
+    white-space: nowrap;
+}
+
+.btns_building {
+    display: inline-block;
+}
+
+#btns_building_wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* ~ 건물 버튼 */
+
+/* rooms_wrapper */
+#rooms_wrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.room {
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-block;
+    margin: 15px 0px;
+    height: 30%;
+    border-radius: 5px;
+}
+
+
+.room_img {
+    height: 70%;
+    border-bottom: solid 0.5px;
+}
+
+.room:hover {
+    border: 1.5px solid #000080;
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-block;
+    margin: 15px 0px;
+    height: 30%;
+    border-radius: 5px;
+}
+
+/* top */
+.top {
+    display: inline-block;
+    float: left;
+    width: 40%;
+}
+
+img {}
+
+.carousel-control-prev-icon {
+    /*font-size: 0.5em;*/
+}
+
+/* bottom */
+.bottom {
+    display: inline-block;
+    width: 55%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.bottom > div {
+    display: inline-block;
+    width: 100%;
+}
+
+.bottom > .room_tag {
+    width: 100%;
+    text-align: left;
+}
+
+.bottom .secret_bname,
+.bottom .secret_rname {
+    display: none;
+    font-size: 0 color: white;
+}
+
+.timetable_wrapper {
+    width: 100%;
+}
+
+.timetable {
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.timetable div {
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+
+    border: 1px solid #aaaaaa;
+}
+
+.timetable div {
+    font-size: 0;
+}
+
+/* button */
+.btn_reserve {
+    background: #AFEEEE;
+    border: 2px solid #AFEEEE;
+    color: #333;
+    width: 120px;
+    height: 40px;
+    display: none;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 20px 0;
+}
+
+/*즐겨찾기 버튼 */
+.favorite_btn {
+    background: #AFEEEE;
+    border: 2px solid #AFEEEE;
+    color: #333;
+    width: 120px;
+    height: 40px;
+    display: none;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 20px 0;
+
+}
+
+.btn_reserve:hover,
+.favorite_btn:hover {
+    background: #000080;
+    border-color: #000080;
+    color: #FAF0E6;
+    width: 120px;
+    height: 40px;
+
+}
+
+/* ~rooms_wrapper */

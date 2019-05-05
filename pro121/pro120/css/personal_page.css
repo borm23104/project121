@@ -1,0 +1,33 @@
+#reservations_wrapper{
+    width: 100%;
+}
+
+#reservations_wrapper > div{
+    display: inline-block;
+    
+}
+
+.reservation{
+    width: 100%;
+}
+
+.reservation > div{
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.reservation .btns{
+    float: right;
+    border: 0;
+}
+
+.btns > *{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    padding: 0px 5px;
+}
+
+.btns > *:hover{
+    background-color: lightslategray;
+}

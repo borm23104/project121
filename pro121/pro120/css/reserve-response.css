@@ -1,0 +1,8 @@
+#reserve_response{
+    margin: auto;
+    text-align: center;
+}
+
+#reserve_response > *{
+    display: inline-block;
+}

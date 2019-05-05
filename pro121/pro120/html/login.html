@@ -1,0 +1,70 @@
+<div>
+    <div class="my__account__wrapper">
+        <h3 class="account__title">&nbsp;사용자 로그인</h3>
+        <form action="#" onsubmit="return false;">
+            <div class="account__form">
+                <div class="input__box">
+                    <label>이메일 아이디 <span>*</span></label>
+                    <input type="text" id="login_id">&nbsp;&nbsp;@gc.gachon.ac.kr
+                </div>
+                <div class="input__box">
+                    <label>비밀번호<span>*</span></label>
+                    <input type="password" id="login_password">
+                </div>
+                <div class="form__btn">
+                    <button id="login">로그인</button>
+                    &nbsp;<span id="message5"></span>
+                    <button>회원가입</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+var host = 'localhost'
+
+            $("#login").click(function(){
+                var login_id = $("#login_id").val();
+                var login_password = $("#login_password").val();
+                
+                //빈칸 유무검사
+                if($("#login_id").val() == "")
+                    $("#message5").empty().html("이메일 아이디를 입력해주시기 바랍니다.");
+
+                else if($("#login_password").val() == "")
+                    $("#message5").empty().html("비밀번호를 입력해주시기 바랍니다.");
+
+                //db에서 입력된 정보가 있는지 조회
+                else{
+                    // 
+                    
+                    $.get("http://"+host+"/authUser", {
+
+                        login_id : login_id, login_password : login_password
+
+                    },function(data){
+
+                        if(data == "auth"){
+                            alert('로그인되었습니다.'); 
+                            $.get("http://"+host+"/login",{
+                                login_id : login_id, login_password : login_password
+                            });
+
+                            reserve(); //예약 시도
+                        }
+
+                        if(data == 'fail'){
+                            alert("입력하신 아이디와 비밀번호를 다시 확인해주시기 바랍니다.");
+                            $("#login_id").val() = "";
+                            $("#login_password").val() = "";
+                        }
+                        
+                    });
+                
+                }
+                    // 
+            
+            });
+</script>
